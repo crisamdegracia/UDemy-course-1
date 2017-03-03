@@ -1,0 +1,583 @@
+<!Doctype html>
+<html>
+<head>
+<title> BBC NEWS </title>
+<style>
+
+
+ body {
+     margin:0 ;
+	 padding: 0;
+	 font-family: helvetica , arial, sans-serif;
+   	 
+ }
+ 
+ #top-bar {
+	 margin:0 auto;
+	 height: 40px;
+	 width: 1100px;
+	
+	 
+ }
+ 
+ #bbc-logo {
+	 margin:8px;
+	 width:100px;
+     float: left;
+     margin-rigth: 8px;
+ }
+
+ .topbar-section {
+     float:left;
+     border-right: 1px solid #CCC;
+     height: 25px;;
+     margin-top: 10px;
+ }
+ 
+ #topbar-more {
+  position: relative;
+  top:3px;;
+ }
+ 
+ #sign-in {
+   height: 25px;
+   position:relative;
+   top: 1px;
+ }
+ 
+ 
+ #sign-in-logo {
+     width: 25px;
+     margin:1px 15px;
+     float: left;
+ }
+ 
+ #sign-in-text {
+     font-weight: bold ;
+     font-size: 90%;
+     position: relative;
+     top: 4px;   
+     padding-right: 50px;
+     padding-bottom:5px;
+     height: 20px;
+ }
+ 
+ #bell-logo {
+     height: 25px;
+	 width: 25px;
+     margin: 10px  5px 5px 8px ;
+     border-right: 1px solid #CCC;
+     padding-right: 10px;
+     padding-left: 3px;
+ }
+ 
+ #bell-div {
+     float: left; 
+	 height:40px;
+	 padding-top:-2px;
+ }
+ 
+ .topbar-menu  a {
+     font-weight: bold;
+     font-size: 90%;
+     padding: 2px 15px 0 15px;
+     height: 27px;
+     text-decoration: none;
+	 color: black;
+	 border-right:none;
+	 position:relative;
+	 top: 5px;
+ }
+ 
+ 
+
+   #dropdown-logo {
+     width: 16px;
+     margin-left: 20px;
+	 position:relative;
+	 top:1px;
+   }
+   
+   #search-logo {
+     width: 20px;
+	 position:relative:
+	 bottom: 30px;
+     height:27px;
+	 padding:-5px 0 4px 0;
+     margin:0 0 2px 0;
+     border-right: 0px solid #CCCCCC;
+	 border-top: 1px solid #CCCCCC;
+	 border-bottom: 1px solid #CCC;
+   }
+   
+   #search-box {
+     
+     height: 16
+     font-size: 14px;
+  	 padding: 5px 5px;
+     margin: 0 0 5px 5px;
+     float: left;
+	
+   }
+   
+ .clear {
+   clear:both;  
+   }
+   
+   
+   #menu-bar-container {
+     position:relative;
+	 right:135px;
+	 float:left;
+     width:1368px;
+	 height:70px;
+     background-color: #BB1919;	 
+     border-top:1px solid #CCCCCC;
+ }
+ 
+ #menu-bar {
+   
+     width:51%;
+     height: 98%;
+     float:left;
+     margin: 0 1px 0 auto;
+     padding: 0 150px;
+     position:relative;
+     left: 140px;
+     
+ }
+ 
+ h1 {
+     padding:0;
+     margin: 0;
+     font-size:40px;
+     font-weight:normal;
+     color: white;
+     padding-top:10px;
+     float:left;
+     position: relative;
+     right: 150px;
+ }
+ 
+ #local-news {
+    border: 1px solid #bb4545;
+    width: 138px;
+    height:2px;
+    float:right;
+    padding: 20px 1px 10px 1px;
+    margin:15px -190px 15px 0;
+ }
+   #loc-logo {
+     height: 36px;
+	 width:33px;
+	 position:relative;
+	 bottom:50px;
+	 padding: 0;
+	 left: 144px;
+     margin: 5px 0px 1px -2px;
+     border-radius: 30%;	 
+     	 
+   }
+   
+   #local-news a{
+   
+     color: white;
+     text-decoration: none ;
+     font-size:20px;
+     position:relative;
+     top: -15px;
+   }
+   
+   #local-news a:hover {
+     text-decoration: underline;
+   
+   }
+   
+   #menu-bar-2-container {
+     position:relative;
+	 right:140px;
+	 float:left;
+     width:1113px;
+	 height:15px;
+     background-color: #a91717;
+     color: white;	
+	 padding: 10px 130px;
+     margin-bottom: 4px;
+    
+   }
+    /** home-Uk-World **/
+	
+   #menu-bar-2 {
+     width: 1100px;
+	 margin: 0 auto;
+	 height: 20px;
+	 padding-left:0; 
+	 
+   }
+   
+   #menu-bar-2 a {
+     height:18px;
+     color: white;
+	 text-decoration: none;
+	 margin-top:0px;
+	 padding:0 10px;
+     border-right: 1px solid #BB4545;
+	 font-size: 18px;
+	 position:relative;
+	 top: 1px;	
+	 float:left;
+   }
+   
+   #menu-bar-2 a:hover {
+    border-bottom: 2px solid white;
+    
+   }
+   #drop-down-2 {
+     width: 15px;
+	 height:15px;
+	 margin-top:0px
+   }
+   
+   #no-border {
+     padding: 0
+     margin-top: 0;
+     border: none !important;
+     float:left;
+   }
+   
+   
+   #page-container {
+	 float:left;
+     width: 1100px;
+	 margin: 0 auto;
+	 position:relative;
+	 left: 15px;
+   	 position:relative;
+	 top: 20px;
+     	 
+   }
+   
+   h2 {
+    
+     font-weight:normal;
+	 margin-top: 1px;
+	 border-bottom: 4px solid #a91717;
+	 width:120px;
+	 color:black;
+	 
+	 }
+	 
+	 h3 a {
+	   color: black;
+	   font-size:30px;
+	   text-decoration: none;
+	 }
+	 
+	 h3 a:hover {
+	   color: #1167a8;
+	 }
+	 
+	 #article-summary {
+	   color: #5a5a5a;
+	   width: 280px;
+	   float:left;
+	   
+	   heigth: 2px;
+	 }
+	 
+	 
+	.clock {
+	   height: 15px;
+	   position:relative;
+	   top: 2px;
+	   
+	 }
+	 
+	#topic-link {
+	   text-decoration: none;
+	   color: #a91717;
+	   border-left: 1px solid #CCCCCC;
+	   padding: 10px;
+	 }
+	 
+	#article-summary a:hover {
+	   color: #1167a8;
+	 
+	 }
+	 
+	.date {
+	   padding-right: 10px;
+	   color:black;
+	 }
+	 
+	 
+	#article-container {
+	  margin: 0 auto;
+	  border-right: 1px solid #CCCCCC;
+	  float:left;
+	  width:668px; 
+	 }
+	 
+	 
+	#main-article-image {   
+		width: 350px;
+		padding: 0;
+	    margin: 0 auto;
+	  }
+	  
+	#article-hr {  
+	    border-top: 1px solid #a91717;
+		width:50px;
+	  
+	  }
+	  
+	.article-link {
+	  text-decoration:none;
+	  color:black;
+	
+	}
+	
+	#watch-listen {
+	  color: black;
+	  float:left;
+	  width:400px;
+	  padding-left:20px;
+	  height: 350px;
+	  }
+	 
+	
+	
+	h4 {
+	  font-weight: normal;
+	  font-size: 20px;	
+	  width:120px;
+	  padding-left: 3px;
+	  margin: 5px 5px;
+	  padding-top:5px;
+	  
+	}
+	
+	.article-side-image {
+	  width: 90px;
+	  float:left;
+	  margin-right:10px;
+	}
+	
+	.watch-listen-link  {
+	  text-decoration: none ;
+      color:black;
+	  font-weight: bold;
+	  font-size:18px;
+	 }
+	 
+	 .watch-listen-link:hover {
+	   color:#1167a8;
+	 {
+	
+	.side-article {
+	  float:right;
+	  width:250px;
+	  position:relative;
+	  top:-15px;
+	
+	}
+	
+	</style>
+</head>
+<body>
+<div id="body"> 
+
+	<div id="top-bar">
+
+		<img id="bbc-logo" src="image/bbc-logo.png">
+  
+  
+		<div id="sign-in" class="topbar-section">
+		
+			<img id="sign-in-logo" src="image/sign-in2.jpg">
+			
+			<span id="sign-in-text"> Sign in </span>
+			
+		</div>
+				
+		<div id="bell-div" >
+  
+			<img id="bell-logo" src="image/bell.png">
+		</div>
+	
+		<div class="topbar-section topbar-menu">
+	
+		<a href="">	News </a>
+				
+		</div>
+	
+		<div class="topbar-section topbar-menu">
+	
+		<a href=""> Sport </a>
+		</div>
+	
+		<div class="topbar-section topbar-menu">
+	
+		<a href="">	Weather </a>
+		</div>
+		
+		<div class="topbar-section topbar-menu">
+	
+		<a href="">	Iplayer </a>
+		
+		</div>
+		
+		<div class="topbar-section topbar-menu">
+		
+		<a href="">		TV </a>
+		
+		</div>
+		
+		<div class="topbar-section topbar-menu">
+	
+		<a href="">	Radio </a>
+		</div>
+	
+		<div class="topbar-section topbar-menu">
+			
+		<a id="topbar-more" href="">	More 
+		<img id="dropdown-logo" src="image/drop-down.png"></a>
+	
+		</div>
+	
+		<div class="topbar-section" >
+				<input id="search-box" type="text" placeholder="Search">
+				<input type="image" id="search-logo" src="image/search-icon.png">
+		</div>
+	
+	
+	<div class="clear"></div>
+	
+	  <div id="menu-bar-container">
+	
+	    <div id="menu-bar">
+	  
+		  <h1> NEWS </h1>	
+		
+			<div id="local-news">
+			
+				<a href="#" > Find local news </a>
+				
+			<input type="image" id="loc-logo"src="image/location.png">
+			
+			</div>
+	    </div>
+	  
+	  </div>
+			
+	<div class="clear"> </div>
+			
+	<div id="menu-bar-2-container">
+	  
+	  <div id="menu-bar-2">
+	  
+			<a href="#"> Home </a>
+			<a href=""> UK </a>
+			<a href=""> World  </a>
+			<a href=""> Business </a>
+			<a href=""> Politics </a>
+			<a href=""> Tech </a>
+			<a href=""> Science </a>
+			<a href=""> Health </a>
+			<a href=""> Education </a>
+			<a href=""> Entertaiment & Arts </a>
+			<a href=""> Video & Audio </a>
+			<a id="no-border" href=""> More 
+			<img id="drop-down-2" src="image/drop-down.png"> </a>
+	  </div>
+	  
+	</div>
+	
+    <div class="clear"> </div>
+	 
+	 
+	<div id="page-container">
+	 
+	   <div id="main-article">
+	 
+		<h2> Technology </h2>
+		
+	    <div id="article-container">
+		  
+			<h3> <a href=""> Asda bug exposed payment details </a></h3>
+		 
+			<div id="article-summary">
+		 
+			<p>  Securities vulnerabilities that put customer at risk have affected Asda's 
+					website for a couple of year a security expert has revealed.</p>
+					
+		 
+			<p> <img class="clock" src="image/clock.png"> <span class="date">19 January  </span><a id="topic-link" href="" >Technology</a></p>
+			<hr id="article-hr" align="left">
+					
+			<p><a class="article-link" href="">  Surveilance firm hit in hack attack </a></p>
+			<p><a class="article-link" href=""> Ebay flaw has existed for months </a></p>
+
+					
+		    </div>
+				  
+			  <img id="main-article-image" src="image/news.jpg">
+	     
+		 </div>
+	  
+	   </div>
+	  
+	  
+	  
+	  <div id="watch-listen"> 
+	  
+	     <h4> Watch/Listen </h4>
+		 
+		 <div class="side-article">
+		 
+		     <img class="article-side-image" src="image/news.jpg">
+			 
+			 <a class="watch-listen-link" href="" > Uk science chief backs blockchains </a>
+			 
+			 <p> <img class="clock" src="image/clock.png"> <span class="date"> 19 January 2017 </span></p>
+		  
+	     </div>
+	    
+	 <div class="clear"> </div>
+	 
+	   <div class="side-article">
+		 
+		 	 <img class="article-side-image" src="image/news.jpg">
+			 
+			 <a class="watch-listen-link" href="" > Uk science chief backs blockchains </a>
+			 
+			 <p> <img class="clock" src="image/clock.png"> <span class="date"> 19 January 2017 </span><a id="topic-link" href="" >Technology</a></p>
+		  
+	     </div>
+		 
+	  <div class="clear"> </div>
+	  
+		 <div class="side-article">
+		 
+		 	 <img class="article-side-image" src="image/news.jpg">
+			 
+			 <a class="watch-listen-link" href="" > Uk science chief backs blockchains </a>
+			 
+			 <p> <img class="clock" src="image/clock.png"> <span class="date"> 19 January 2017 </span><a id="topic-link" href="" >Technology</a></p>
+		  
+	     </div>	
+	  
+	  
+	  
+	  
+	   
+	  </div>
+	
+	
+	
+	
+	</div>
+	</div>
+	</div>
+</body>
+</html>
